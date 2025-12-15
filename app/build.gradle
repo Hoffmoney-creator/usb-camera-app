@@ -1,0 +1,26 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace "com.usbcamera.viewer"
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.usbcamera.viewer"
+        minSdk 23
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+        }
+    }
+}
+
+dependencies {
+    implementation 'com.github.jiangdongguo:AndroidUSBCamera:3.3.2'
+}
